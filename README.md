@@ -4,6 +4,9 @@
 
 这是一个 Cloudflare Worker 中转适配器，用于把 `https://unlimited.surf` 转换成 OpenAI 兼容的 `/v1/*` 接口，以及 Anthropic/Claude Code 兼容的 `/v1/messages` 和 `/anthropic/*` 接口。
 
+## 温馨提醒
+据网友反馈，社区有人将unlimited.surf接入Claude code，结果被控制了电脑写入了乱七八糟的东西，可能网站有投毒行为，建议不要接入有控制权的agent，可以使用cherry-studio等,(相关反馈)[https://github.com/eooce/transfer-api/issues/1]
+
 ## 功能概览
 
 - OpenAI 兼容：`/v1/chat/completions`、`/v1/responses`、`/v1/models`、`/v1/files`。
