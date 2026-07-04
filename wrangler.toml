@@ -1,6 +1,9 @@
 name = "transfer-api"
-main = "src/worker.js"
-compatibility_date = "2025-11-21"
+compatibility_date = "2024-01-01"
+
+workers_dev = false
+
+routes = [ { pattern = "api.yourdomain.com/*", zone_name = "yourdomain.com" }]
 
 # Store the upstream key as a secret instead of committing it here:
 #   wrangler secret put UNLIMITED_SURF_API_KEY
